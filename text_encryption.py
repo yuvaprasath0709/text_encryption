@@ -96,7 +96,7 @@ def main():
 
         action = get_action()
         if action not in ['e', 'd']:
-            print("❌ Invalid action! Please enter 'e' or 'd'.")
+            print(" Invalid action! Please enter 'e' or 'd'.")
             continue
 
         if algo in ['1', '2']:  # AES or DES
@@ -116,17 +116,17 @@ def main():
                 ciphertext = input("\nEnter the RSA ciphertext to decrypt: ").strip()
                 result = rsa_decrypt(ciphertext)
         else:
-            print("❌ Invalid selection! Try again.")
+            print(" Invalid selection! Try again.")
             continue
 
-        print("\n✅ Result:")
+        print("\n Result:")
         print("-" * 60)
         print(result)
         print("-" * 60)
 
         next_step = input("\nDo you want to perform another operation? (y/n): ").strip().lower()
         if next_step != 'y':
-            print("\n👋 Exiting the tool. Stay secure!")
+            print("\n Exiting the tool. Stay secure!")
             break
 
     print("\nTool Developed by Yuva Prasath")
